@@ -1,6 +1,9 @@
 const { src, dest, watch } = require('gulp');
 const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass');
+const dartSass = require('sass');
+const gulpSass = require('gulp-sass');
+
+const sass = gulpSass(dartSass);
 
 
 // Static server
@@ -19,8 +22,8 @@ function bs() {
 
 // Compile sass into CSS & auto-inject into browsers
 function serveSass() {
-  return src("./sass/*.sass")
-    .pipe(sass())
+  return src("./sass/style.sass")
+    .pipe(sass({ outputStyle: 'expanded' }))
     .pipe(dest("./css"))
     .pipe(browserSync.stream());
 };
