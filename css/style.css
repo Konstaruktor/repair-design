@@ -343,6 +343,17 @@ template {
   display: none;
 }
 
+.button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.button--primary {
+  background-color: #E3B873;
+  color: #fff;
+}
+
 body {
   font-family: sans-serif;
   font-size: 14px;
