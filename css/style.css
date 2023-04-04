@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: "Futura PT Book";
-  src: url("../fonts/futura/FuturaPT-Demi.woff") format("woff"), url("../fonts/futura/FuturaPT-Demi.woff") format("truetype");
+  src: url("../fonts/FuturaPT-Demi.woff") format("woff"), url("../fonts/FuturaPT-Demi.woff") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: wrap;
@@ -366,6 +366,37 @@ template {
 
 .contacts__phone {
   margin-right: 45px;
+}
+
+.hero {
+  position: relative;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #fff;
+}
+.hero__instagram {
+  position: absolute;
+  max-width: 80px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.instagram {
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instagram__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E3B873;
+  transform: rotate(-90deg);
+}
+
+.title {
+  margin: 0;
 }
 
 body {
