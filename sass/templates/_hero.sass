@@ -8,9 +8,16 @@
   background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
   height: 100vh
   color: $light
+  &::before
+    content: ''
+    position: absolute
+    background-color: rgba($dark, 0.7)
+    width: 100%
+    height: 100%
 
   &__content
     max-width: 670px
+    position: relative
 
   &__text
     max-width: 504px
@@ -39,6 +46,15 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    &::after
+      content: ''
+      background: url(../img/arrow-down.svg) no-repeat center
+      width: 30px
+      height: 30px
+      border: 2px solid $primary
+      border-radius: 50%
+      margin-left: 15px
+
 
 .instagram
   background-color: $dark
@@ -48,13 +64,23 @@
 
   &__link
     text-transform: uppercase
+    display: flex
+    align-items: center
     text-decoration: none
     color: $primary
-    transform: rotate(-90deg)
+    transform: rotate(90deg)
+    &::after
+      content: ''
+      width: 50px
+      height: 1px
+      background-color: $primary
+      margin-left: 10px
+
+
 
 .title
   margin: 0
-  font-family: 'Yeseva One', cursive
+  font-family: 'Yeseva One', sans-serif
   text-transform: uppercase
   font-size: 40px
 

@@ -6,7 +6,7 @@
   font-display: wrap;
 }
 @font-face {
-  font-family: "Futura PT Book";
+  font-family: "Futura PT Demi";
   src: url("../fonts/FuturaPT-Demi.woff") format("woff"), url("../fonts/FuturaPT-Demi.woff") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -333,9 +333,17 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
 }
+.button:hover {
+  cursor: pointer;
+}
 .button--primary {
   background-color: #E3B873;
   color: #fff;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  transition: box-shadow 0.3s;
+}
+.button--primary:hover {
+  box-shadow: none;
 }
 .button--outline {
   border: 1px solid #fff;
@@ -369,6 +377,10 @@ template {
   color: #fff;
   text-transform: uppercase;
   margin-right: 40px;
+  transition: color 0.3s;
+}
+.nav__item:hover {
+  color: #E3B873;
 }
 
 .phone {
@@ -390,8 +402,16 @@ template {
   height: 100vh;
   color: #fff;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(19, 19, 19, 0.7);
+  width: 100%;
+  height: 100%;
+}
 .hero__content {
   max-width: 670px;
+  position: relative;
 }
 .hero__text {
   max-width: 504px;
@@ -421,6 +441,15 @@ template {
   text-decoration: none;
   color: #fff;
 }
+.hero__scroll-down::after {
+  content: "";
+  background: url(../img/arrow-down.svg) no-repeat center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  margin-left: 15px;
+}
 
 .instagram {
   background-color: #131313;
@@ -430,14 +459,23 @@ template {
 }
 .instagram__link {
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #E3B873;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
+}
+.instagram__link::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #E3B873;
+  margin-left: 10px;
 }
 
 .title {
   margin: 0;
-  font-family: "Yeseva One", cursive;
+  font-family: "Yeseva One", sans-serif;
   text-transform: uppercase;
   font-size: 40px;
 }
@@ -451,5 +489,7 @@ template {
 
 body {
   font-family: "Futura PT Book", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
 }

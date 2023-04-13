@@ -6,14 +6,14 @@
   font-weight: normal;
   font-style: normal;
   font-display: wrap;
-  }
+}
 
-  @font-face {
-    font-family: 'Futura PT Book';
-    src:
-    url('../fonts/FuturaPT-Demi.woff') format('woff'),
-    url('../fonts/FuturaPT-Demi.woff') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: wrap;
-    }
+@font-face {
+  font-family: 'Futura PT Demi';
+  src:
+  url('../fonts/FuturaPT-Demi.woff') format('woff'),
+  url('../fonts/FuturaPT-Demi.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
