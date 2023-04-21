@@ -1,0 +1,26 @@
+*, *:before, *:after
+  box-sizing: border-box 
+
+body
+  font-family: 'Futura PT Book', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+
+.section
+  &-title
+    text-align: center
+    text-transform: uppercase
+    font-family: 'Yeseva One', cursive
+    &__image
+      &::before, &::after
+        content: ''
+        display: inline-block
+        vertical-align: text-top
+        margin: 0 10px
+        width: 32px
+        height: 2px
+        background-color: $primary
+
+
+
