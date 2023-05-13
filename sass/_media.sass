@@ -33,6 +33,7 @@
       display: none
   
   .hero
+    max-height: 40rem
     &__content
       font-size: 1.64rem      
       min-width: 24.2rem
@@ -51,4 +52,23 @@
       width: 24.29rem
       height: 3.6rem
       margin-bottom: 1.8rem
+
+@media screen and ( max-width: 768px)
+  .row
+    flex-direction: column
   
+  .card
+    &__text
+      margin-bottom: 5.64rem
+      margin-left: 0
+      margin-top: -15rem
+
+  .design
+    background-color: $dark
+
+  .design .section
+    &-title
+      color: $light
+      &__text
+        max-width: 21.85rem
+        font-size: 1.07rem
