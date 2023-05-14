@@ -21,6 +21,29 @@
   
     &__scroll-down 
       display: none
+    
+
+@media screen and ( max-width: 768px)
+  .row
+    flex-direction: column
+  
+  .card
+    &__text
+      margin-bottom: 5.64rem
+      margin-left: 0
+      margin-top: -15rem
+
+  .design
+    background-color: $dark
+
+  .design .section
+    &-title
+      color: $light
+      &__text
+        max-width: 21.85rem
+        font-size: 1.07rem
+        color: $light
+
 
 @media screen and ( max-width: 576px)
   .contacts
@@ -53,22 +76,7 @@
       height: 3.6rem
       margin-bottom: 1.8rem
 
-@media screen and ( max-width: 768px)
-  .row
-    flex-direction: column
-  
   .card
     &__text
-      margin-bottom: 5.64rem
-      margin-left: 0
-      margin-top: -15rem
+      max-width: 23.57rem
 
-  .design
-    background-color: $dark
-
-  .design .section
-    &-title
-      color: $light
-      &__text
-        max-width: 21.85rem
-        font-size: 1.07rem
